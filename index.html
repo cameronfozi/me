@@ -201,7 +201,7 @@
             squareLength = secondBlockLength * 2
             squareArea = squareLength ** 2
             
-            secondCompletion = map(sec, 0, 59, 0, squareArea)
+            secondCompletion = map(sec, 0, 60, 0, squareArea)
             fullSecondSquares = Math.floor(secondCompletion / (squareArea/4))
                 
             if (fullSecondSquares == 0) {
@@ -253,7 +253,7 @@
             
                 squareLength = 4 * minuteBlockLength;
                 
-                minuteCompletion= map(secs, 0, 3599, 0, squareLength)
+                minuteCompletion= map(secs, 0, 3600, 0, squareLength)
                 fullMinuteSquares = Math.floor(minuteCompletion / minuteBlockLength)
             
                 rect(minuteIndent, 
